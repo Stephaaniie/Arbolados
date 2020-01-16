@@ -4,29 +4,13 @@ import datetime
 
 import csv
 
-import pandas as pd
-
 import pymongo
 
 from pymongo import MongoClient
 
-#Decidi utilizar el nombre cientifico por que es universal
-
-ARBOL_REQUERIDO   = 'Phytolacca dioica'
-
 NOMBRE_BD         = "arbolados_bonaerenses"
 
 NOMBRE_COLLEC     = "barrio"
-
-NUEVO_CSV         = 'arbolado-publico-lineal-actual.csv'
-
-ARCHIVO_AUX       = 'aux.csv'
-
-NOMBRE_CIENTIFICO = 'nombre_cie'
-
-BARRIO_CSV        = 'barrio'
-
-ARCHIVO_CSV       = 'arbolado-publico-lineal.csv'
 
 MONGO_URI         = "mongodb+srv://stephanie:stephanie@cluster0-lmmsw.mongodb.net/test?retryWrites=true&w=majority"
 
@@ -71,10 +55,6 @@ class DB:
 if __name__ == '__main__':
 	
 	db = DB()
-
-	db.createCollection(NOMBRE_COLLEC)
-
-	db.barrio.drop()
 
 	data = db.database[NOMBRE_COLLEC]
 
