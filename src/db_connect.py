@@ -6,7 +6,11 @@ import csv
 
 import pymongo
 
+import pandas as pd
+
 from pymongo import MongoClient
+
+REGISTRO_OMBUES_CANT = 'cant_ombues_barrio.csv'
 
 NOMBRE_BD         = "arbolados_bonaerenses"
 
@@ -58,8 +62,14 @@ if __name__ == '__main__':
 
 	data = db.database[NOMBRE_COLLEC]
 
-	data_query = {'campo' : 'valor'}
+	nuevos_datos = pd.read_csv(REGISTRO_OMBUES_CANT)
 
-	"""data_count = data.find(data_query).count()
+	data_frame = pd.DataFrame(nuevos_datos)
 
-	print("Cantidad (",datetime.datetime.now(), ") :", data_count)"""
+	barios_cant_max = data_frame.get_value(data_frame['Cantidad de Ombús:'].idxmax(),'barrio')
+
+	print(barios_cant_max)
+	
+	#grupo = data_frame2.groupby(COLUMNA_REQUERIDA)
+
+	
