@@ -10,11 +10,9 @@ import pandas as pd
 
 from pymongo import MongoClient
 
-REGISTRO_OMBUES_CANT = 'cant_ombues_barrio.csv'
-
 NOMBRE_BD         = "arbolados_bonaerenses"
 
-NOMBRE_COLLEC     = "barrio"
+NOMBRE_COLLEC     = "barrios_max_cant_arbol_requerido"
 
 MONGO_URI         = "mongodb+srv://stephanie:stephanie@cluster0-lmmsw.mongodb.net/test?retryWrites=true&w=majority"
 
@@ -61,15 +59,5 @@ if __name__ == '__main__':
 	db = DB()
 
 	data = db.database[NOMBRE_COLLEC]
-
-	nuevos_datos = pd.read_csv(REGISTRO_OMBUES_CANT)
-
-	data_frame = pd.DataFrame(nuevos_datos)
-
-	barios_cant_max = data_frame.get_value(data_frame['Cantidad de Ombús:'].idxmax(),'barrio')
-
-	print(barios_cant_max)
-	
-	#grupo = data_frame2.groupby(COLUMNA_REQUERIDA)
 
 	
