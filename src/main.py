@@ -2,8 +2,6 @@
 
 import db_connect
 
-import generador_archivo_info
-
 NOMBRE_BD         = "arbolados_bonaerenses"
 
 NOMBRE_COLLEC     = "barrios_max_cant_arbol_requerido"
@@ -62,10 +60,4 @@ print('La catidad total de arboles en la ciudad de Buenos Aires es de:%i'%cantid
 
 print('El porsentaje que representa es de: %f '%promedio)
 
-db = db_connect.DB()
-
-data = db.database[NOMBRE_COLLEC]
-
-data.drop()
-
-aux = data.insert_many(data_frame3)
+main()
