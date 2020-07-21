@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pymongo
+import datetime
 
 NOMBRE_BD         = "arbolados_bonaerenses"
 
@@ -52,4 +53,8 @@ if __name__ == '__main__':
 
 	data = db.database[NOMBRE_COLLEC]
 
-	
+	data_query = {'campo': 'valor'}
+
+	data_count = data.find(data_query).count()
+
+	print("cantidad(", datetime.datetime.now(),")",data_count)
