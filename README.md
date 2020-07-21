@@ -7,7 +7,7 @@ En este proyecto se utilizó:
 
 2)Python 3.1
 
-Forma de ejecucion del proyecto: python main.py
+Forma de ejecucion del proyecto: python db_conection.py
 
 # Consigna:
 
