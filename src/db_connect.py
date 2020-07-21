@@ -1,14 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import datetime
-
-import csv
-
 import pymongo
-
-import pandas as pd
-
-from pymongo import MongoClient
 
 NOMBRE_BD         = "arbolados_bonaerenses"
 

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import db_connect
-
 NOMBRE_BD         = "arbolados_bonaerenses"
 
 NOMBRE_COLLEC     = "barrios_max_cant_arbol_requerido"
@@ -59,5 +57,3 @@ print('La cantidad total de Ombús en la ciudad de Buenos Aires es de: %i'%canti
 print('La catidad total de arboles en la ciudad de Buenos Aires es de:%i'%cantidad_arboles)
 
 print('El porsentaje que representa es de: %f '%promedio)
-
-main()
