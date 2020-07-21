@@ -7,9 +7,12 @@ NOMBRE_BD         = "arbolados_bonaerenses"
 
 NOMBRE_COLLEC     = "barrios_max_cant_arbol_requerido"
 
-MONGO_URI         = "mongodb+srv://stephanie:stephanie@cluster0-lmmsw.mongodb.net/test?retryWrites=true&w=majority"
+MONGO_URI         = "mongodb+srv://stephanie:JOWCqLDG5Bq2DbgI@cluster0-lmmsw.mongodb.net/arbolados?retryWrites=true&w=majority"
 
 CONN_ATLAS        = "atlas"
+
+client = pymongo.MongoClient(MONGO_URI)
+db = client.test
 
 class DB:
 
