@@ -58,7 +58,6 @@ with open(REGISTRO_BONAERENSE,"rU") as f:
 
 promedio = float((cantidad_ombues/cantidad_arboles)*100)
 
-
 print(data_frame3)
 
 print('La cantidad total de Ombús en la ciudad de Buenos Aires es de: %i'%cantidad_ombues)
@@ -66,3 +65,5 @@ print('La cantidad total de Ombús en la ciudad de Buenos Aires es de: %i'%canti
 print('La catidad total de arboles en la ciudad de Buenos Aires es de:%i'%cantidad_arboles)
 
 print('El porsentaje que representa es de: %f '%promedio)
+
+

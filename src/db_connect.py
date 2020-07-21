@@ -7,12 +7,13 @@ NOMBRE_BD         = "arbolados_bonaerenses"
 
 NOMBRE_COLLEC     = "barrios_max_cant_arbol_requerido"
 
-MONGO_URI         = "mongodb+srv://stephanie:JOWCqLDG5Bq2DbgI@cluster0-lmmsw.mongodb.net/arbolados?retryWrites=true&w=majority"
+MONGO_URI         = "mongodb+srv://stephanie:JOWCqLDG5Bq2DbgI@cluster0-lmmsw.mongodb.net/arbolados_bonaerenses?retryWrites=true&w=majority"
 
 CONN_ATLAS        = "atlas"
 
 client = pymongo.MongoClient(MONGO_URI)
-db = client.test
+db = client.barrio
+
 
 class DB:
 
@@ -36,8 +37,6 @@ class DB:
 
 			if conn_type == CONN_ATLAS:
 
-				# Conexión con la DB de Atlas
-
 				self.__conn = pymongo.MongoClient(MONGO_URI)
 
 			else:
@@ -45,7 +44,6 @@ class DB:
 				raise ValueError(" Connection error")
 
 			self.database = self.__conn[NOMBRE_BD]
-
 
 
 # Test section 

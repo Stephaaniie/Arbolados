@@ -5,7 +5,7 @@ En este proyecto se utilizó:
 
 1)MongoDB atlas.
 
-2) Python 3.1
+2)Python 3.1
 
 Forma de ejecucion del proyecto: python main.py
 
@@ -18,3 +18,5 @@ Forma de ejecucion del proyecto: python main.py
 <div style="width: 150%">
  <img width="69.15%" src="https://github.com/Stephaaniie/Arbolados/blob/master/src/resources/Captura%20de%20pantalla%20de%202020-07-21%2014-33-24.png"/>
 </div>
+
+<a href="https://github.com/Stephaaniie/Arbolados/blob/master/src/resources/Ejercicio%20de%20prueba%20-%20Omb%C3%BAes%20(1).pdf" target="_blank">Link del PDF<a>
